@@ -7,8 +7,14 @@ const reportQuestion = () => {
     return (
         <>
 
+    <div className="space-y-0.5 mt-16">
+      <h2 className="text-xl font-bold tracking-tight mt-4">Got questions?</h2>
+      <p className="text-muted-foreground">Just ask! </p>
+
+    </div>
+
         
-    <div className="flex items-center border border-gray-300 rounded p-3 mt-16">
+    <div className="flex items-center border border-gray-300 rounded p-3 mt-4">
     <input
         type="text"
         className="flex-1 outline-none border-none"
@@ -20,6 +26,13 @@ const reportQuestion = () => {
     </svg>
   </button>
         
+    </div>
+
+    <div className="questions-answer-div">
+        <p className="questions-answer-subdiv mt-4">
+        here is the answer
+        </p>
+
     </div>
 
              
