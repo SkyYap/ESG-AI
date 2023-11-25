@@ -27,7 +27,8 @@ import {
   LocateFixed,
   GanttChartSquare,
   Loader,
-  CheckCheck
+  CheckCheck,
+  Inbox
 } from 'lucide-react';
 
 const Google = ({ ...props }) => (
@@ -66,7 +67,8 @@ export const Icons = {
   LocateFixed,
   GanttChartSquare,
   Loader,
-  CheckCheck
+  CheckCheck,
+  Inbox
 };
 
 export const SocialIcons = {

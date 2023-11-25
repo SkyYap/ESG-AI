@@ -23,7 +23,7 @@ const GeneratingReport = () => {
             {requestReport &&
             <div className="space-y-4">
                 <div className='flex justify-around'>
-                        <Icons.Loader className="flex flex-col items-center animate-spin-slow" width="240" height="240" stroke-width="1" viewBox="0 0 24 24" />
+                        <Icons.Loader className="flex flex-col items-center animate-spin-slow" width="240" height="240" strokeWidth="1" viewBox="0 0 24 24" />
                 </div>
                 <div className="flex justify-around">
                     <h3 className="text-2xl items-center tracking-tight">Generating report. This may take few minutes</h3>
