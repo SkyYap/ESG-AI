@@ -2,6 +2,7 @@
 
 import { Separator } from '@/components/ui/Separator';
 import ActionHeader from './_PageSections/ActionHeader';
+import ActionText from './_PageSections/ActionText';
 
 export default async function PdfUploadPage() {
   return (
@@ -9,15 +10,11 @@ export default async function PdfUploadPage() {
     <div>
         <ActionHeader />
         <Separator className="my-4" />
+        <ActionText/>
+
 
     </div>
-    {/* <div>
-        <ReportFinishedHeader />
-        <Separator className="my-4" />
-        <Outline/>
-        <Separator className="my-4" />
-        <ModifyReport/>
-    </div> */}
+
     </>
   );
 }
