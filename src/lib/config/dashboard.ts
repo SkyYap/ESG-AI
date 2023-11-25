@@ -5,10 +5,10 @@ const configuration = {
   routes: [
     { title: 'Overview', link: '/dashboard/main', icon: Icons.Home },
     { title: 'Todos', link: '/dashboard/todos/create', icon: Icons.Laptop },
-    { title: 'PDF Upload', link: '/dashboard/todos/create', icon: Icons.Upload},
-    { title: 'Insights', link: '/dashboard/settings/profile', icon: Icons.GanttChartSquare },
-    { title: 'Report', link: '/dashboard/settings/profile', icon: Icons.FileCheck },
-    { title: 'Action', link: '/dashboard/settings/profile', icon: Icons.LocateFixed },
+    { title: 'PDF Upload', link: '/dashboard/pdfupload', icon: Icons.Upload},
+    { title: 'Insight', link: '/dashboard/settings/profile', icon: Icons.GanttChartSquare },
+    { title: 'Report', link: '/dashboard/report', icon: Icons.FileCheck },
+    { title: 'Action', link: '/dashboard/action', icon: Icons.LocateFixed },
     { title: 'Settings', link: '/dashboard/settings/profile', icon: Icons.Settings },
   ],
   subroutes: {

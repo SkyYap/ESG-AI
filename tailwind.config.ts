@@ -49,7 +49,8 @@ const config: Config = {
         sans: ['var(--font-inter)']
       },
       animation: {
-        fadeIn: 'fadeIn 700ms ease-in-out'
+        fadeIn: 'fadeIn 700ms ease-in-out',
+        'spin-slow': 'spin 3s linear infinite',
       },
       keyframes: () => ({
         fadeIn: {

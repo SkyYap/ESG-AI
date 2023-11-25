@@ -25,7 +25,9 @@ import {
   Upload,
   FileCheck,
   LocateFixed,
-  GanttChartSquare
+  GanttChartSquare,
+  Loader,
+  CheckCheck
 } from 'lucide-react';
 
 const Google = ({ ...props }) => (
@@ -62,7 +64,9 @@ export const Icons = {
   Upload,
   FileCheck,
   LocateFixed,
-  GanttChartSquare
+  GanttChartSquare,
+  Loader,
+  CheckCheck
 };
 
 export const SocialIcons = {
