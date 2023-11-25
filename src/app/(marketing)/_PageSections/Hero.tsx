@@ -1,50 +1,30 @@
-import { cn } from '@/lib/utils/helpers';
-import Link from 'next/link';
-import { buttonVariants } from '@/components/ui/Button';
+import React from 'react'
+import './hero.css'; 
 import Image from 'next/image';
-
-const HeroScreenshot = () => {
+import treeImage from './tree.png'; 
+export const Hero = () => {
   return (
-    <div className="hidden lg:grid items-center justify-center mt-16 mx-8">
-      <Image
-        src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
-        alt="App screenshot"
-        className="mx-auto h-[90%] lg:max-lg:w-[90%]  2xl:max-w-[72rem]"
-        width={3840}
-        height={75}
-      />
-    </div>
-  );
-};
+    <div className='mx-14'>
+    <div className='hero-main flex mt-16 justify-between'>
 
-export default function Hero() {
-  return (
-    <div>
-      <section className="py-8 px-4">
-        <div className="flex flex-col items-center gap-4 text-center">
-          <h1 className=" text-3xl md:text-7xl md:max-w-[54rem] ">
-            An example app built using Next.js 13 server components.
-          </h1>
-          <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-            I&apos;m building a web app with Next.js 13 and open sourcing everything. Follow along
-            as we figure this out together.
-          </p>
-          <div className="space-x-4">
-            <Link href="/login" className={cn(buttonVariants({ size: 'lg' }))}>
-              Get Started
-            </Link>
-            <Link
-              href="/"
-              target="_blank"
-              rel="noreferrer"
-              className={cn(buttonVariants({ variant: 'ghost', size: 'lg' }))}
-            >
-              Learn More <span aria-hidden="true">→</span>
-            </Link>
+          <div className='flex flex-col gap-6 hero-left max-w-2xl'>
+          <div className='hero-1'>Empower your sustainability journey with us </div>
+          <div className='hero-2'>We help businesses generate ESG reports and insights quickly and securely using AI!  </div>
+          <div className='flex gap-12'>
+            <button className='cta-button'> <span className='cta-span'>Get started</span></button>
+            <button className='cta-button'> <span className='cta-span'>How we do it </span></button>
           </div>
+          </div>
+
+
+          <div>
+            <Image src={treeImage} alt="" />
         </div>
-      </section>
-      <HeroScreenshot />
+        </div>
     </div>
-  );
+    
+   
+  )
 }
+
+export default Hero
