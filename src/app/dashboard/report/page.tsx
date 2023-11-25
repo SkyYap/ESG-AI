@@ -7,6 +7,7 @@ import ReportFinishedHeader from './_PageSections/ReportFinishedHeader';
 import ReportQuestion from './_PageSections/ReportQuestion';
 import ModifyReport from './_PageSections/ModifyReport';
 import { Outline } from './_PageSections/Outline';
+import ApiAnswer from './_PageSections/ApiAnswer';
 
 export default async function PdfUploadPage() {
   return (
@@ -22,6 +23,7 @@ export default async function PdfUploadPage() {
         <Separator className="my-4" />
         <ModifyReport/>
         <ReportQuestion/>
+        <ApiAnswer/>
     </div>
     </>
   );
