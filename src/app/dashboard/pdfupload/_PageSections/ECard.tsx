@@ -15,29 +15,29 @@ import { useDropzone } from "react-dropzone"
 import { Icons } from "@/components/Icons"
 import { useState } from "react"
 import { uploadToS3 } from "@/lib/utils/s3"
+import { Toaster, toast } from "react-hot-toast";
  
 const ECard = () => {
   const { getRootProps, getInputProps } = useDropzone({
     accept: { "application/pdf": [".pdf"] },
     maxFiles: 1,
     onDrop: async (acceptedFiles) => {
-      console.log(acceptedFiles);
       const file = acceptedFiles[0]
-      if (file.size > 10 * 1024 * 1024) {
-        // bigger than 10mb!
-        alert('please upload a smaller file')
-        return 
+      if (file.size > 100 * 1024 * 1024) {
+        // bigger than 100mb!
+        toast.error("File too large");
+        return; 
       }
 
-      try{
+      try {
         const data = await uploadToS3(file);
         console.log("data", data);
+        toast.success('Successfully uploaded!');
       } catch (error) {
         console.log(error)
       }
     }
   })
-  const [uploading, setUploading] = useState(false);
 
   return (
     <Card className="w-full">
@@ -62,9 +62,6 @@ const ECard = () => {
       <CardContent>
         <form>
           <div className="grid w-full items-center gap-4">
-            <div className="flex flex-col space-y-1.5">
-                <Button variant="outline">Upload</Button>
-            </div>
             <div className="flex flex-col items-center gap-4">
                 <Label htmlFor="framework">OR</Label>
                 <Input id="name" placeholder="Paste your URL" />
