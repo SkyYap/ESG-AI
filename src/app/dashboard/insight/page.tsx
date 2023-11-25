@@ -2,6 +2,7 @@
 
 import { Separator } from '@/components/ui/Separator';
 import ActionHeader from './_PageSections/InsightHeader';
+import { Outline } from '../report/_PageSections/Outline';
 
 export default async function Insight() {
   return (
@@ -9,6 +10,7 @@ export default async function Insight() {
     <div>
         <ActionHeader />
         <Separator className="my-4" />
+        <Outline/>
 
     </div>
     {/* <div>

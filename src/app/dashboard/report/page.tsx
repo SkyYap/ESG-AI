@@ -19,7 +19,6 @@ export default async function PdfUploadPage() {
     <div>
         <ReportFinishedHeader />
         <Separator className="my-4" />
-        <Outline/>
         <Separator className="my-4" />
         <ModifyReport/>
         <ReportQuestion/>
