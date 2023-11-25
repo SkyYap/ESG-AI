@@ -32,7 +32,6 @@ const reportQuestion = () => {
         <p className="questions-answer-subdiv mt-4">
         here is the answer
         </p>
-
     </div>
 
              
