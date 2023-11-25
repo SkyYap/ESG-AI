@@ -12,7 +12,7 @@ import {
    
   const topics = [
     {
-      title: "Human Rights",
+      title: "Employee Training Programs",
       embed: <Icons.Close/>,	
       identify:	<Icons.CheckCheck/>,
       mitigate:	<Icons.Check/>,
@@ -21,7 +21,7 @@ import {
       remediate: <Icons.CheckCheck/>,
     },
     {
-      title: "Fair Competition",
+      title: "Board Accountability",
       embed: <Icons.CheckCheck/>,	
       identify:	null,
       mitigate:	null,
@@ -30,7 +30,7 @@ import {
       remediate: null,
     },
     {
-      title: "Taxation",
+      title: "Fair Labor Practices",
       embed: <Icons.Close/>,	
       identify:	<Icons.CheckCheck/>,
       mitigate:	null,
@@ -39,7 +39,7 @@ import {
       remediate: null,
     },
     {
-      title: "Bribery, bribe solicitation and extortion",
+      title: "Water Conservation",
       embed: <Icons.CheckCheck/>,	
       identify:	<Icons.CheckCheck/>,
       mitigate:	<Icons.Check/>,
