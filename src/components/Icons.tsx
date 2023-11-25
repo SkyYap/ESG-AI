@@ -21,7 +21,11 @@ import {
   Twitter,
   Github,
   Linkedin,
-  Menu
+  Menu,
+  Upload,
+  FileCheck,
+  LocateFixed,
+  GanttChartSquare
 } from 'lucide-react';
 
 const Google = ({ ...props }) => (
@@ -54,7 +58,11 @@ export const Icons = {
   CheckCircle2,
   Sun,
   Moon,
-  Menu
+  Menu,
+  Upload,
+  FileCheck,
+  LocateFixed,
+  GanttChartSquare
 };
 
 export const SocialIcons = {

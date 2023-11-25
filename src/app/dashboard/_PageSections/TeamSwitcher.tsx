@@ -13,15 +13,15 @@ import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/Popover
 
 const groups = [
   {
-    label: 'Teams',
+    label: 'Organizations',
     teams: [
       {
-        label: 'Team-1',
-        value: 'team1'
+        label: 'HLB ESG Report',
+        value: 'org1'
       },
       {
-        label: 'Team-2',
-        value: 'team2'
+        label: 'CITI ESG Report',
+        value: 'org2'
       }
     ]
   }
