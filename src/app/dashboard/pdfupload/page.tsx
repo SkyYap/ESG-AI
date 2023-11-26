@@ -8,8 +8,14 @@ import { GCard } from './_PageSections/GCard';
 import { OCard } from './_PageSections/OCard';
 import { Toaster } from 'react-hot-toast';
 import { Button } from '@/components/ui/Button';
+import { useRouter } from "next/navigation";
 
 export default async function PdfUploadPage() {
+  const router = useRouter();
+  const handleRedirect = () => {
+    router.push('/dashboard/report');
+  };
+
   return (
     <div>
       <Toaster/>
@@ -21,7 +27,7 @@ export default async function PdfUploadPage() {
       <OCard/>
       <Separator className="my-4" />
       <div className='flex justify-around'>
-        <Button className='flex flex-col items-center'>
+        <Button onClick={handleRedirect} className='flex flex-col items-center'>
           Next
         </Button>
       </div>
