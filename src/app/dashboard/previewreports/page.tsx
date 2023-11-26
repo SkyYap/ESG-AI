@@ -1,8 +1,8 @@
 'use client'
 
 import { Separator } from '@/components/ui/Separator';
-import ReportHeader from './_PageSections/ReportHeader';
-import GeneratingReport from './_PageSections/GeneratingReport';
+// import ReportHeader from './_PageSections/ReportHeader';
+// import GeneratingReport from './_PageSections/GeneratingReport';
 import ReportFinishedHeader from './_PageSections/ReportFinishedHeader';
 import ReportQuestion from './_PageSections/ReportQuestion';
 import ModifyReport from './_PageSections/ModifyReport';
