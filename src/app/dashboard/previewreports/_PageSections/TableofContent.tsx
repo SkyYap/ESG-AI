@@ -15,45 +15,45 @@ import {
       paymentStatus: "Carbon Footprint",
       totalAmount: "Community Engagement",
       paymentMethod: "Risk Management",
-      test: "",
+      test: "-",
       test2: "ESG Goals",
-      test3: ""
+      test3: "-"
     },
     {
       invoice: "Purpose of ESG Report",
       paymentStatus: "Sustainable Financing",
       totalAmount: "Diversity and Inclusion",
       paymentMethod: "Ethical Business Practices",
-      test: "",
+      test: "-",
       test2: "Innovation and Adaptation",
-      test3: ""
+      test3: "-"
     },
     {
       invoice: "Governance Structure",
-      paymentStatus: "",
+      paymentStatus: "-",
       totalAmount: "Employee Well-Being",
-      paymentMethod: "",
-      test: "",
-      test2: "",
-      test3: ""
+      paymentMethod: "-",
+      test: "-",
+      test2: "-",
+      test3: "-"
     },
     {
       invoice: "Key Achievement",
-      paymentStatus: "",
-      totalAmount: "",
-      paymentMethod: "",
-      test: "",
-      test2: "",
-      test3: ""
+      paymentStatus: "-",
+      totalAmount: "-",
+      paymentMethod: "-",
+      test: "-",
+      test2: "-",
+      test3: "-"
     },
     {
       invoice: "Future Commitments",
-      paymentStatus: "",
-      totalAmount: "",
-      paymentMethod: "",
-      test: "",
-      test2: "",
-      test3: ""
+      paymentStatus: "-",
+      totalAmount: "-",
+      paymentMethod: "-",
+      test: "-",
+      test2: "-",
+      test3: "-"
     },
   ]
    
