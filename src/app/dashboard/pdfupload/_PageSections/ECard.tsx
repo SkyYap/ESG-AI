@@ -13,9 +13,8 @@ import { Input } from "@/components/ui/Input"
 import { Label } from "@/components/ui/Label"
 import { useDropzone } from "react-dropzone"
 import { Icons } from "@/components/Icons"
-import { useState } from "react"
 import { uploadToS3 } from "@/lib/utils/s3"
-import { Toaster, toast } from "react-hot-toast";
+import { toast } from "react-hot-toast";
  
 const ECard = () => {
   const { getRootProps, getInputProps } = useDropzone({
