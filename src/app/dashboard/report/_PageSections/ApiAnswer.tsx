@@ -5,7 +5,7 @@ const ApiAnswer = () => {
   const [answer, setAnswer] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const apiUrl = 'https://3573-34-106-210-166.ngrok.io/api/ask_question';
+  const apiUrl = 'https://57b3-34-106-210-166.ngrok.io/api/ask_question';
 
   const handleQuestionChange = (e) => {
     setQuestion(e.target.value);
