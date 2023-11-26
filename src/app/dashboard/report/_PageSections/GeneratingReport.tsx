@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/Button";
+import { useRouter } from "next/navigation";
 
 const GeneratingReport = () => {
     const [requestReport, setRequestReport] = useState(false);
+    const router = useRouter();
     
     const handleRequestReportClick = () => {
         setRequestReport(true);
@@ -13,6 +15,19 @@ const GeneratingReport = () => {
         setRequestReport(false);
     };
     
+    useEffect(() => {
+        // Redirect after 5 seconds when requestReport is set to true
+        if (requestReport) {
+          const timeoutId = setTimeout(() => {
+            // Replace '/your-redirect-path' with the actual path you want to redirect to
+            router.push('/dashboard/previewreports');
+          }, 3000);
+    
+          // Clean up the timeout when the component is unmounted or requestReport is set to false
+          return () => clearTimeout(timeoutId);
+        }
+    }, [requestReport, router]);
+      
     return (
         <>
             {!requestReport &&

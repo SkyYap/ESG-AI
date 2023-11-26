@@ -8,8 +8,8 @@ const reportQuestion = () => {
         <>
 
     <div className="space-y-0.5 mt-16">
-      <h2 className="text-xl font-bold tracking-tight mt-4">Got questions?</h2>
-      <p className="text-muted-foreground">Just ask! </p>
+      <h2 className="text-xl font-bold tracking-tight mt-4">Chatbot fact checker</h2>
+      <p className="text-muted-foreground">Chat directly with the files</p>
 
     </div>
 

@@ -28,7 +28,8 @@ import {
   GanttChartSquare,
   Loader,
   CheckCheck,
-  Inbox
+  Inbox,
+  FileCog
 } from 'lucide-react';
 
 const Google = ({ ...props }) => (
@@ -68,7 +69,8 @@ export const Icons = {
   GanttChartSquare,
   Loader,
   CheckCheck,
-  Inbox
+  Inbox,
+  FileCog
 };
 
 export const SocialIcons = {
