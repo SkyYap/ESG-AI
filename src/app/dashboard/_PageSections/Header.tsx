@@ -18,18 +18,6 @@ const Header = ({ display_name, email, avatar_url }: HeaderProps) => {
   const pathname = usePathname().split('/');
   const { routes } = configuration;
 
-  useEffect(() => {
-    if (pathname.includes('main')) {
-      setHeaderText('Dashboard');
-    } else if (pathname.includes('todos')) {
-      setHeaderText('Todos');
-    } else if (pathname.includes('settings')) {
-      setHeaderText('Settings');
-    } else {
-      setHeaderText('Dashboard');
-    }
-  }, [pathname]);
-
   return (
     <div className="border-b">
       <div className="flex h-16 items-center px-4">
