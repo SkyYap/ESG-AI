@@ -13,8 +13,9 @@ export const MainLogoText = () => {
 
 export const MainLogoIcon = () => {
   return (
-    <Link href="/" className="w-4 h-4">
-      <Icons.Command />
-    </Link>
+    // <Link href="/" className="w-4 h-4">
+    //   <Icons.Command />
+    // </Link>
+    <span className="ml-3 text-3xl font-bold text-green-600">ESG.ai</span>
   );
 };
