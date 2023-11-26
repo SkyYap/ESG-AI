@@ -4,17 +4,16 @@ import { Button } from "@/components/ui/Button";
 
 const ModifyReport = () => {
     const handleDownload = () => {
-        // Replace 'your-pdf-file.pdf' with the actual name of your PDF file
+        // Replace 'ESG.ai.pdf' with the actual name of your PDF file
         const pdfUrl = '/ESG.ai.pdf';
     
         // Create a temporary link element
         const link = document.createElement('a');
         link.href = pdfUrl;
-        link.target = '_blank'; // Open in a new tab
-        link.download = 'ESG.ai.pdf'; // Specify the download file name
+        link.target = '_blank'; 
+        link.download = 'ESG.ai.pdf'; // Change the file name
         document.body.appendChild(link);
     
-        // Trigger the click event on the link to initiate the download
         link.click();
     
         // Remove the link from the document
