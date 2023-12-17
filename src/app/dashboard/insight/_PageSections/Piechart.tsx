@@ -14,7 +14,7 @@ class PieChart extends React.Component {
             width: 380,
             type: 'pie',
           },
-          labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+          labels: ['Malay', 'Chinese', 'Indian', 'European', 'American'],
           responsive: [{
             breakpoint: 480,
             options: {

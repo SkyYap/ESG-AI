@@ -16,7 +16,7 @@ const groups = [
     label: 'Organizations',
     teams: [
       {
-        label: 'HLB ESG Report',
+        label: 'Al-Ikhsan Report',
         value: 'org1'
       },
       {

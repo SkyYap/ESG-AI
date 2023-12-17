@@ -1,56 +1,66 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
-const ApiAnswer = () => {
+const ChatPDF = () => {
   const [question, setQuestion] = useState('');
   const [answer, setAnswer] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const apiUrl = 'https://3573-34-106-210-166.ngrok.io/api/ask_question';
+  const askQuestion = async () => {
+    if (!question) return;
 
-  const handleQuestionChange = (e) => {
-    setQuestion(e.target.value);
-  };
-
-  const handleAskQuestion = async () => {
     setLoading(true);
+    setAnswer('');
+
+    const config = {
+      headers: {
+        "x-api-key": "sec_8OlKpGWu1jBxAAvV3Ywp0DkAy7XptrMN",
+        "Content-Type": "application/json",
+      },
+    };
+
+    const data = {
+      sourceId: "cha_hhyGF2AE617ykMOOe7iEX",
+      messages: [
+        {
+          role: "user",
+          content: question,
+        },
+      ],
+    };
 
     try {
-      const response = await fetch(`${apiUrl}?question=${encodeURIComponent(question)}`);
-      const data = await response.text(); // Use text() instead of json()
-
-      setAnswer(data);
+      const response = await axios.post("https://api.chatpdf.com/v1/chats/message", data, config);
+      setAnswer('Answer: ' + response.data.content);
     } catch (error) {
-      console.error('Error fetching data:', error);
-      setAnswer('Error fetching data.');
-    } finally {
-      setLoading(false);
+      setAnswer('Error: ' + error.message);
     }
+
+    setLoading(false);
   };
 
   return (
     <div>
-    
       <label className="flex items-center border border-gray-300 rounded p-3 mt-4">
-        
-        <input type="text" placeholder="Ask any question about your generated report here"
-        className="flex-1 outline-none border-none"
-        value={question} onChange={handleQuestionChange} />
-        <button className="bg-green-500 hover:bg-green-700 text-white rounded-full w-8 h-8 flex items-center justify-center ml-2"
-            onClick={handleAskQuestion} disabled={loading}>
-
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 transform rotate-180">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7"></path>
-                </svg>
-            </button>
+        <input
+          type="text"
+          placeholder="Ask any question about your generated report here"
+          className="flex-1 outline-none border-none"
+          value={question}
+          onChange={(e) => setQuestion(e.target.value)}
+        />
+        <button
+          className="bg-green-500 hover:bg-green-700 text-white rounded-full w-8 h-8 flex items-center justify-center ml-2"
+          onClick={askQuestion}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 transform rotate-180">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
       </label>
-      <br>
-      </br>
-
-      
-      {loading && <p>Loading...</p>}
-      {answer && <p>Answer: {answer}</p>}
+      {loading ? <p>Asking...</p> : <p className='mt-3'>{answer}</p>}
     </div>
   );
 };
 
-export default ApiAnswer;
+export default ChatPDF;

@@ -18,9 +18,9 @@ export default async function PdfUploadPage() {
         <Separator className="my-4" />
         <ActionText/>
         <Outline/>
-        <HLB/>
+        {/* <HLB/> */}
         {/* <Image src={Hong} alt="kj" /> */}
-        <HongTable/>
+        {/* <HongTable/> */}
 
 
     </div>

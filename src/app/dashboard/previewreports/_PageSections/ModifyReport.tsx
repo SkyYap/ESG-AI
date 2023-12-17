@@ -5,13 +5,13 @@ import { Button } from "@/components/ui/Button";
 const ModifyReport = () => {
     const handleDownload = () => {
         // Replace 'ESG.ai.pdf' with the actual name of your PDF file
-        const pdfUrl = '/Hong Leong Bank ESG Report.pdf';
+        const pdfUrl = '/Al-Ikhsan ESG Report.pdf';
     
         // Create a temporary link element
         const link = document.createElement('a');
         link.href = pdfUrl;
         link.target = '_blank'; 
-        link.download = 'Hong Leong Bank ESG Report.pdf'; // Change the file name
+        link.download = 'Al Ikhsan ESG Report.pdf'; // Change the file name
         document.body.appendChild(link);
     
         link.click();

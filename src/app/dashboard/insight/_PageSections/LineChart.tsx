@@ -9,7 +9,7 @@ class LineChart extends React.Component {
       series: [
         {
           name: "CO2 Emissions",
-          data: [100, 410, 350, 510, 490, 620, 690, 910, 1480],
+          data: [1480, 1380, 1100, 1200, 900, 1080, 1000, 870, 900],
         },
       ],
       options: {

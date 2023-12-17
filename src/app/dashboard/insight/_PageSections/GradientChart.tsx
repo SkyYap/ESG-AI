@@ -34,7 +34,7 @@ class GradientChart extends React.Component {
             }
           },
           title: {
-            text: 'Forecast',
+            text: 'Forecast of net zero-non-bio waste',
             align: 'left',
             style: {
               fontSize: "16px",

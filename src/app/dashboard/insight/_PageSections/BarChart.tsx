@@ -11,13 +11,13 @@ class BarChart extends Component {
           id: "basic-bar"
         },
         xaxis: {
-          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
+          categories: [2019, 2020, 2021, 2022, 2023]
         }
       },
       series: [
         {
           name: "series-1",
-          data: [30, 40, 45, 50, 49, 60, 70, 91]
+          data: [30, 40, 45, 50, 49]
         }
       ]
     };
@@ -29,6 +29,7 @@ class BarChart extends Component {
       <div className="app">
         <div className="row">
           <div className="mixed-chart">
+            <div>Donations to social causes in kRM</div>
             <Chart
               options={this.state.options}
               series={this.state.series}

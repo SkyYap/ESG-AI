@@ -41,7 +41,7 @@ const GeneratingReport = () => {
                         <Icons.Loader className="flex flex-col items-center animate-spin-slow" width="240" height="240" strokeWidth="1" viewBox="0 0 24 24" />
                 </div>
                 <div className="flex justify-around">
-                    <h3 className="text-2xl items-center tracking-tight">Generating report. This may take few minutes</h3>
+                    <h3 className="text-2xl items-center tracking-tight">Fetching report. This may take few minutes</h3>
                 </div>
                 <div className='flex justify-around'>
                     <Button onClick={handleCancelClick} variant="destructive" className='flex flex-col items-center'>Cancel</Button>
